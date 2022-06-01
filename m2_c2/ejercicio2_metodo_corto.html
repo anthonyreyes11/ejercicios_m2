@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condicionales</title>
+</head>
+<body>
+  <h1></h1>
+    <script>
+    let edad = prompt("¿Cual es tu edad?");
+    const mensaje ="Tu edad es " + edad + " años";
+    console.log(mensaje);
+    alert (mensaje);
+    edad = parseInt(edad)
+    let genero = prompt("Indica si eres Mujer o Hombre");
+    const mensaje2 ="Tu genero es " + genero;
+    console.log(mensaje2);
+    alert (mensaje2);
+    // como son dos condiciones deben estar en parentesis
+    const mensaje3 = (edad >= 60 && genero=="mujer") || (edad>=65 && genero=="hombre") ?
+      "si se puede jubilar":"no se puede jubilar";
+    console.log(mensaje3);
+    
+
+
+
+      //estoy es de otra cosa
+      //let edad = prompt("indique su edad");
+      //edad = parseInt(edad);
+
+      //if (edad > 18){
+        //console.log ("usted puede entrar al club")
+
+      //}
+      //else if ("edad < 21"){
+        //console.log("usted puede entrar,pero no comprar alcohol")
+      //}
+      //else{
+       // console.log("usted puedes entrar al club")
+      //}
+    </script>
+  
+</body>
+</html>

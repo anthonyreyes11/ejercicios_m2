@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let minutero = 0
+    while (minutero<= 5) {
+      let segundero = 0;
+      while (segundero<=59) {
+
+        let mensaje = ''
+        if (minutero == 1) {
+          mensaje = '1 minuto, '
+        } else {
+          mensaje = minutero + ' minutos, '
+        }
+
+        if (segundero == 1) {
+          mensaje = mensaje + '1 segundo'
+        } else {
+          mensaje = mensaje + segundero + ' segundos'
+        }
+
+        console.log(mensaje)
+
+        //segundero += 1
+        segundero ++;  
+      }
+      //minutero += 1
+      minutero ++;
+    };
+
+  </script>
+</body>
+</html>
