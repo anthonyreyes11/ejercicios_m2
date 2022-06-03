@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let n1= parseInt(prompt('Indique desde que número desea contar'));
+    let n_veces = parseInt(prompt('Indique hasta que número desea contar'));
+    const palabra1 = prompt('Indique que palabra quiere usar para reemplazar FIZZ');
+    const palabra2 = prompt('Indique que palabra quiere usar para reemplazar BUZZ');
+    const fizz =  palabra1 ;
+    const buzz =  palabra2 ;
+
+    let i =n1;
+      while (i<=n_veces) {
+      if ((i % 3 == 0)&&(i % 5 == 0)){
+        console.log(i +',' + fizz +" "+ buzz )
+      }
+      else{
+        if (i % 5 == 0) {
+          console.log(i + ',' + buzz)
+        }
+        if (i % 3 == 0) {
+          console.log(i + ',' + fizz )
+        }
+      }
+      i++;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//Si el número es múltiplo de 3, deberá imprimir "Fizz" en vez del número.
+//Si es múltiplo de 5, deberá imprimir "Buzz".
+//Si es múltiplo de 3 y de 5 (a la misma vez), deberá imprimir "FizzBuzz"
+    let i =100;
+      while (i<=300) {
+      if ((i % 3 == 0)&&(i % 5 == 0)){
+        console.log(i + ' FIZZBUZZ ')
+      }
+      else{
+        if (i % 5 == 0) {
+          console.log(i + ' BUZZ ')
+        }
+        if (i % 3 == 0) {
+          console.log(i + ' FIZZ ')
+        }
+      }
+      i++;
+    }
+  </script>
+</body>
+</html>
